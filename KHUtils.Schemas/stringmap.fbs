@@ -1,4 +1,5 @@
 namespace khutils.hashstring_map;
+attribute "fs_serializer";
 
 /// simple hash LUT for Flatbuffers
 
@@ -12,6 +13,6 @@ table MapEntry {
 }
 
 /// container for map entries
-table Map {
+table Map (fs_serializer) {
 	entries: [MapEntry];
 }
