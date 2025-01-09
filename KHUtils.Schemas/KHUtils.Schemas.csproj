@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- build settings -->
+  <PropertyGroup>
+    <TargetFrameworks>net9.0;netstandard2.1</TargetFrameworks>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <!-- build metadata -->
+  <PropertyGroup>
+    <PackageId>KHUtils.Schemas</PackageId>
+    <Title>KHUtils Legacy Schemas</Title>
+    <Description>legacy schema definitions and structures</Description>
+    <PackageTags>Schema;FlatBuffer;FlatSharp</PackageTags>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.github.dena.jp/avatar/KHUtils.Schemas/Icon.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <!-- FlatSharp build settings -->
+  <PropertyGroup>
+    <FlatSharpNameNormalization>true</FlatSharpNameNormalization>
+    <FlatSharpNullable>true</FlatSharpNullable>
+    <FlatSharpDeserializers>Lazy;Progressive;GreedyMutable</FlatSharpDeserializers>
+  </PropertyGroup>
+
+  <!-- packaged files -->
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)**\*.fbs" Pack="true"/>
+  </ItemGroup>
+
+  <!-- schema files -->
+  <ItemGroup>
+    <FlatSharpSchema Include="$(MSBuildThisFileDirectory)**\*.fbs"/>
+  </ItemGroup>
+
+  <!-- package dependencies -->
+  <ItemGroup>
+    <PackageReference Include="FlatSharp.Compiler">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="FlatSharp.Runtime" />
+  </ItemGroup>
+
+</Project>
