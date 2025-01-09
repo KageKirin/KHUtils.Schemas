@@ -2,7 +2,8 @@
   "solution": {
     "path": "KHUtils.Schemas.sln",
     "projects": [
-      "KHUtils.Schemas\\KHUtils.Schemas.csproj"
+      "KHUtils.Schemas\\KHUtils.Schemas.csproj",
+      "Tests\\Functionality\\Functionality.csproj"
     ]
   }
 }
