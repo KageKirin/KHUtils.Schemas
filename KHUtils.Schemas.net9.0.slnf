@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "KHUtils.Schemas.sln",
+    "projects": [
+      "KHUtils.Schemas\\KHUtils.Schemas.csproj"
+    ]
+  }
+}
