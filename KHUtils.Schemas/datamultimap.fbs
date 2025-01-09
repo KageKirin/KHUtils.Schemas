@@ -1,5 +1,6 @@
 
 namespace khutils.data_multimap;
+attribute "fs_serializer";
 
 /// simple simili-multimap type for Flatbuffers
 
@@ -18,6 +19,6 @@ table MapEntry {
 }
 
 /// container for multimap entries
-table Map {
+table Map (fs_serializer) {
 	entries: [MapEntry];
 }
