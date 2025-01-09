@@ -7,7 +7,7 @@ namespace khutils.hashstring_map;
 /// id: hash
 /// value: string
 table MapEntry {
-	id: ulong(key, hash: "fnv1_64");
+	id: ulong(key); //, hash: "fnv1_64"
 	value: string;
 }
 
