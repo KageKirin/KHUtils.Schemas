@@ -4,7 +4,7 @@ namespace khutils.data_multimap;
 /// simple simili-multimap type for Flatbuffers
 
 /// container for random data
-table Data {
+table MapEntryData {
 	data: [ubyte];
 }
 
@@ -14,7 +14,7 @@ table Data {
 /// values: array of Data
 table MapEntry {
 	id: string(key);
-	values: [Data];
+	values: [MapEntryData];
 }
 
 /// container for multimap entries
