@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# vscode config
+.vscode*/
+
 # dotenv files
 .env
 
@@ -482,3 +485,9 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Build artifacts
+.artifacts/
+
+# Local NuGet packages
+.packages/
