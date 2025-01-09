@@ -13,7 +13,7 @@
     <Description>legacy schema definitions and structures</Description>
     <PackageTags>Schema;FlatBuffer;FlatSharp</PackageTags>
     <PackageIcon>Icon.png</PackageIcon>
-    <PackageIconUrl>https://raw.github.dena.jp/avatar/KHUtils.Schemas/Icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.github.com/KageKirin/KHUtils.Schemas/Icon.png</PackageIconUrl>
   </PropertyGroup>
 
   <!-- FlatSharp build settings -->
